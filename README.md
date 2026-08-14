@@ -373,6 +373,7 @@ The final project brings together several parts:
                     │    XGBoost Model     │
                     └──────────┬───────────┘
                                │
+                               ▼
                     ┌──────────────────────┐
                     │   Fraud Probability  │
                     └──────────┬───────────┘
