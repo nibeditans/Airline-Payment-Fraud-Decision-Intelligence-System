@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local testing
+test.ipynb
+
+# Raw dataset
+data/raw/airline_fraud_3M.parquet
