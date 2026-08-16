@@ -17,6 +17,8 @@ The project goes beyond a simple fraud classification model. I built a complete 
 
 The final system can be used through a Streamlit application where a user can enter transaction details, receive a fraud probability, see the risk level, and understand the factors influencing the prediction.
 
+Explore the live app: **[Airline Fraud Detection App](https://airline-fraud-detection.streamlit.app/)**
+
 ## Business Problem
 
 A fraud model does not directly answer the operational question:
@@ -33,6 +35,10 @@ I therefore separated the project into two parts:
 2. **Decision support**: use that probability to recommend an appropriate action.
 
 This distinction is one of the main ideas behind the project.
+
+Check out the article I have written on this Project:
+
+Complete Project Walkthrough: [How I Built an Airline Payment Fraud Detection System with Machine Learning and Explainable AI](https://nsdsda.medium.com/how-i-built-an-airline-payment-fraud-detection-system-with-machine-learning-and-explainable-ai-d8d87f1448c7)
 
 ## Dataset
 
