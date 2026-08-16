@@ -1,0 +1,23 @@
+name: Auto Refresh Repo
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Make trivial update
+        run: |
+          echo "Updated on $(date)" >> .auto-refresh.txt
+      - name: Commit changes
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
+          git add .auto-refresh.txt
+          git commit -m "Auto-refresh commit" || echo "No changes"
+          git push
